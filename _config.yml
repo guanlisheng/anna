@@ -1,6 +1,6 @@
 # —— 站点基本信息 ——
 title: Anna Guan 的小世界
-description: 六年级小学生 · 北京顺义
+description: 爱阅读、画画、养狗、烘焙的六年级小学生
 author: Anna Guan
 lang: zh-CN
 timezone: Asia/Shanghai
@@ -25,7 +25,7 @@ permalink: /:categories/:year/:month/:day/:title/
 show_excerpts: true          # 首页显示文章摘要而不是全文
 header_pages:                # 顶部导航要显示的页面（按顺序写文件名）
   - index.md
-  - 关于我.md
+  - aboutme.md
 
 # —— 生成选项 ——
 markdown: kramdown
