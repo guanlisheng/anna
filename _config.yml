@@ -6,7 +6,7 @@ lang: zh-CN
 timezone: Asia/Shanghai
 
 # —— 主题 ——
-theme: jekyll-theme-minima
+theme: minima
 
 # —— 插件（Gemfile 里装了不等于生效，必须在这里点名）——
 plugins:
