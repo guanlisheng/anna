@@ -77,7 +77,7 @@ title: Anna Guan 的小世界
 
 如果你想和我聊画画、聊书，或者只是打个招呼，都欢迎呀 👋
 
-📮 [给我发邮件](mailto:anna.guan@example.com)
+📮 [给我发邮件](mailto:guanwenrui2021@icloud.com)
 
 ---
 
