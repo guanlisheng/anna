@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Anna Guan 的个人主页，认识一位来自北京顺义的六年级女生。">
+    <title>Anna Guan｜我的小小主页</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "Trebuchet MS", "Microsoft YaHei", sans-serif;
+        color: #263347;
+        background: #fffaf2;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 32px 20px;
+        background:
+          radial-gradient(circle at 12% 12%, #ffe8ba 0 5px, transparent 6px),
+          radial-gradient(circle at 88% 25%, #d7f2e7 0 7px, transparent 8px),
+          #fffaf2;
+      }
+
+      main {
+        width: min(100%, 760px);
+        margin: 0 auto;
+      }
+
+      .card {
+        overflow: hidden;
+        border: 3px solid #263347;
+        border-radius: 28px;
+        background: #fff;
+        box-shadow: 8px 8px 0 #263347;
+      }
+
+      header {
+        padding: 44px 28px 38px;
+        text-align: center;
+        background: #dff5e9;
+      }
+
+      .avatar {
+        display: grid;
+        width: 104px;
+        height: 104px;
+        margin: 0 auto 18px;
+        place-items: center;
+        border: 3px solid #263347;
+        border-radius: 50%;
+        background: #ffe39e;
+        font-size: 52px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 7vw, 3.25rem);
+        letter-spacing: 0.02em;
+      }
+
+      .subtitle {
+        margin: 10px 0 0;
+        font-size: 1.1rem;
+      }
+
+      .content {
+        display: grid;
+        gap: 24px;
+        padding: 30px;
+      }
+
+      h2 {
+        margin: 0 0 14px;
+        font-size: 1.25rem;
+      }
+
+      .intro {
+        margin: 0;
+        line-height: 1.8;
+      }
+
+      dl {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin: 0;
+      }
+
+      .detail {
+        padding: 16px;
+        border: 2px solid #263347;
+        border-radius: 16px;
+        background: #fffaf2;
+      }
+
+      dt {
+        margin-bottom: 6px;
+        color: #59677a;
+        font-size: 0.9rem;
+      }
+
+      dd {
+        margin: 0;
+        font-size: 1.05rem;
+        font-weight: 700;
+      }
+
+      .contact {
+        padding: 18px;
+        border-radius: 16px;
+        background: #f1ebff;
+        line-height: 1.7;
+      }
+
+      .contact p {
+        margin: 0;
+      }
+
+      footer {
+        padding: 0 30px 26px;
+        color: #59677a;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 20px 14px;
+        }
+
+        header {
+          padding: 34px 18px 30px;
+        }
+
+        .content {
+          padding: 22px 18px;
+        }
+
+        dl {
+          grid-template-columns: 1fr;
+        }
+
+        footer {
+          padding: 0 18px 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <header>
+          <div class="avatar" aria-hidden="true">🌼</div>
+          <h1>Anna Guan</h1>
+          <p class="subtitle">你好，欢迎来到我的小小主页！</p>
+        </header>
+
+        <div class="content">
+          <section aria-labelledby="about-title">
+            <h2 id="about-title">关于我 ✨</h2>
+            <p class="intro">我是 Anna，一名六年级女生。这是我的个人主页，很高兴认识你！</p>
+          </section>
+
+          <section aria-labelledby="info-title">
+            <h2 id="info-title">我的资料 📒</h2>
+            <dl>
+              <div class="detail">
+                <dt>姓名</dt>
+                <dd>Anna Guan</dd>
+              </div>
+              <div class="detail">
+                <dt>年级</dt>
+                <dd>六年级</dd>
+              </div>
+              <div class="detail">
+                <dt>性别</dt>
+                <dd>女生</dd>
+              </div>
+              <div class="detail">
+                <dt>所在城市</dt>
+                <dd>北京·顺义</dd>
+              </div>
+            </dl>
+          </section>
+
+          <section aria-labelledby="contact-title">
+            <h2 id="contact-title">联系小贴士 💌</h2>
+            <div class="contact">
+              <p>这是一个公开网页。为了保护隐私，我不会在这里放电话号码或详细地址。如需联系，请通过家长或监护人。</p>
+            </div>
+          </section>
+        </div>
+        <footer>用一点点好奇心，发现每天的新惊喜 ☀️</footer>
+      </article>
+    </main>
+  </body>
+</html>
