@@ -1,0 +1,51 @@
+# —— 站点基本信息 ——
+title: Anna Guan 的小世界
+description: 六年级小学生 · 北京顺义
+author: Anna Guan
+lang: zh-CN
+timezone: Asia/Shanghai
+
+# —— 主题 ——
+theme: minima
+
+# —— 插件（Gemfile 里装了不等于生效，必须在这里点名）——
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# —— 访问地址（本地开发不用改；部署到 GitHub Pages 时改成你的仓库名）——
+url: ""
+baseurl: ""
+
+# —— 链接样式：/作文/2026/03/15/春游/ ——
+permalink: /:categories/:year/:month/:day/:title/
+
+# —— Minima 的默认行为开关（可选，按需改）——
+show_excerpts: true          # 首页显示文章摘要而不是全文
+header_pages:                # 顶部导航要显示的页面（按顺序写文件名）
+  - index.md
+  - 关于我.md
+
+# —— 生成选项 ——
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+
+future: true                 # 允许写未来日期的文章（孩子提前攒稿时有用）
+
+# —— 不要打包进站点的东西 ——
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - README.md
+
+# —— 压掉第三方 gem 里的 Sass 警告（兜底，不影响你自己代码的报错）——
+sass:
+  quiet_deps: true
