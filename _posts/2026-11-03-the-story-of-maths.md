@@ -128,25 +128,30 @@ flowchart TB
   <figcaption>图很宽，可以在框内横向滚动；手机上也可以拖动查看。颜色表示大致时代，不是精确年代。</figcaption>
 </figure>
 
-<script src="https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js"></script>
+<p id="math-graph-fallback" class="math-source-note" role="status" hidden>图谱脚本未能加载，可能是网络暂时无法访问国内 CDN。请稍后刷新；下面仍有四集的文字总结。</p>
+<script src="https://registry.npmmirror.com/mermaid/11.4.1/files/dist/mermaid.min.js" onerror="document.getElementById('math-graph-fallback').hidden = false"></script>
 <script>
-  mermaid.initialize({
-    startOnLoad: true,
-    securityLevel: "strict",
-    theme: "base",
-    themeVariables: {
-      fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
-      lineColor: "#7b6a58",
-      clusterBkg: "#fffaf3",
-      clusterBorder: "#d8c8b3"
-    },
-    flowchart: {
-      htmlLabels: true,
-      nodeSpacing: 28,
-      rankSpacing: 42,
-      curve: "basis"
-    }
-  });
+  if (window.mermaid) {
+    mermaid.initialize({
+      startOnLoad: true,
+      securityLevel: "strict",
+      theme: "base",
+      themeVariables: {
+        fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        lineColor: "#7b6a58",
+        clusterBkg: "#fffaf3",
+        clusterBorder: "#d8c8b3"
+      },
+      flowchart: {
+        htmlLabels: true,
+        nodeSpacing: 28,
+        rankSpacing: 42,
+        curve: "basis"
+      }
+    });
+  } else {
+    document.getElementById("math-graph-fallback").hidden = false;
+  }
 </script>
 
 ## 按集回看
@@ -177,4 +182,4 @@ flowchart TB
 
 > **阅读图谱的小提醒：**数学是许多文明长期交流、独立探索和共同发展的成果。图中的国家名称是为了方便理解，古代人物所属的是当时的城邦、地区或学术世界，并不总与今天的国界相同；虚线表示相关或相似的思想，不一定是直接师承。
 
-<p class="math-source-note">这是一份根据纪录片主题整理的学习笔记，不是逐集字幕或完整人物清单。人物贡献和连线做了简化，适合继续查资料、提问题、补充新节点。知识图谱使用 Mermaid 从文中流程图代码绘制。</p>
+<p class="math-source-note">这是一份根据纪录片主题整理的学习笔记，不是逐集字幕或完整人物清单。人物贡献和连线做了简化，适合继续查资料、提问题、补充新节点。</p>
