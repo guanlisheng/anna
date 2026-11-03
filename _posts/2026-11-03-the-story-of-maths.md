@@ -180,6 +180,83 @@ flowchart TB
 
 庞加莱发展拓扑与动力系统研究。朱利亚的复迭代研究启发了后来的分形探索，芒德布罗则推广了分形几何的应用与影响。图灵、计算和新的数学领域也让“数学能回答什么问题”成为现代数学的重要主题。
 
+## 从今天的数学课，回望知识的来路
+
+纪录片里的历史并不遥远：小学和初中的很多内容，都能在里面找到“相似的问题”或“后来发展的思想”。下面按中国大陆常见的学习顺序做一个概略对照，教材版本和年级安排可能不同。
+
+**实线**表示课堂内容逐步深入，**虚线**表示可以回望的历史线索，不表示今天的知识都由某一个人发明。
+
+<figure class="math-map">
+  <div class="math-map-scroll" role="region" aria-label="从小学低年级、小学高年级到初中数学内容的历史关联图，可横向和纵向滚动查看" tabindex="0">
+    <pre class="mermaid">
+flowchart LR
+  subgraph L["小学低年级"]
+    direction TB
+    LNUM["数与运算&lt;br/&gt;计数、十进制、四则运算"]
+    LMEAS["图形与测量&lt;br/&gt;长度、周长、简单面积"]
+  end
+
+  subgraph U["小学高年级"]
+    direction TB
+    UFRA["数的扩展&lt;br/&gt;分数、小数、百分数、比"]
+    UAREA["面积与空间&lt;br/&gt;面积、体积、圆与 π 初识"]
+    UDATA["数据整理&lt;br/&gt;统计表、统计图、平均数"]
+  end
+
+  subgraph M["初中"]
+    direction TB
+    MNUM["有理数&lt;br/&gt;负数、数轴与运算"]
+    MALG["代数与方程&lt;br/&gt;用字母表示数、方程、不等式"]
+    MGEO["推理与几何&lt;br/&gt;证明、相似、勾股定理"]
+    MFUNC["坐标与函数&lt;br/&gt;用图像描述数量关系和变化"]
+    MSTAT["概率与统计&lt;br/&gt;随机现象、数据分析"]
+  end
+
+  subgraph H["可以回望的历史线索"]
+    direction TB
+    HPLACE["位值记数与零&lt;br/&gt;古巴比伦的六十进制&lt;br/&gt;印度的十进制位值与零"]
+    HFRAC["分数与测量&lt;br/&gt;古埃及纸草书的分数和土地测量"]
+    HGEOM["几何与勾股关系&lt;br/&gt;巴比伦泥板、希腊几何证明&lt;br/&gt;刘徽与圆周率计算"]
+    HALG["算法与代数&lt;br/&gt;中国《九章算术》的问题算法&lt;br/&gt;花剌子米的代数学"]
+    HNEG["负数运算&lt;br/&gt;中国算术传统与印度婆罗摩笈多"]
+    HCOORD["坐标与函数&lt;br/&gt;笛卡尔连接代数和几何&lt;br/&gt;欧拉发展函数记号"]
+    HPROB["概率与统计&lt;br/&gt;帕斯卡、费马研究概率问题&lt;br/&gt;统计学逐步形成"]
+  end
+
+  LNUM --> UFRA
+  LMEAS --> UAREA
+  UFRA --> MNUM
+  UFRA --> MALG
+  UAREA --> MGEO
+  UDATA --> MSTAT
+  MALG --> MFUNC
+
+  LNUM -.->|记数方法的历史| HPLACE
+  UFRA -.->|分数与计量| HFRAC
+  UAREA -.->|圆面积与几何| HGEOM
+  MGEO -.->|勾股关系与证明| HGEOM
+  MALG -.->|方程算法与代数| HALG
+  MNUM -.->|负数的运算| HNEG
+  MFUNC -.->|坐标表示与变化| HCOORD
+  MSTAT -.->|不确定性与数据| HPROB
+
+  classDef lower fill:#fff3c4,stroke:#b8860b,color:#30251c;
+  classDef upper fill:#e9f5ed,stroke:#5a9a72,color:#30251c;
+  classDef middle fill:#dbeafe,stroke:#2563eb,color:#30251c;
+  classDef history fill:#ede9fe,stroke:#7c3aed,color:#30251c;
+  class LNUM,LMEAS lower;
+  class UFRA,UAREA,UDATA upper;
+  class MNUM,MALG,MGEO,MFUNC,MSTAT middle;
+  class HPLACE,HFRAC,HGEOM,HALG,HNEG,HCOORD,HPROB history;
+    </pre>
+  </div>
+  <figcaption>学段颜色表示今天的学习阶段，紫色表示历史线索。连线是概念关联，不代表严格的单线起源。</figcaption>
+</figure>
+
+比如，今天学的**十进制和位值**，可以连到印度数字传统，以及后来经跨地区交流传播的数字写法；**分数和测量**能让我们想起古埃及人处理土地与计算的问题；**方程和代数**既能回看中国古代的算法，也能回看花剌子米对代数学的系统整理。到了初中，负数、几何证明和坐标图像，又把这些旧问题带进新的表达方式。
+
+圆周率尤其有趣：古希腊的阿基米德和中国的刘徽都曾用几何方法逼近 π。这类例子提醒我们，不同文明有时会独立探索相似的问题。
+
 > **阅读图谱的小提醒：**数学是许多文明长期交流、独立探索和共同发展的成果。图中的国家名称是为了方便理解，古代人物所属的是当时的城邦、地区或学术世界，并不总与今天的国界相同；虚线表示相关或相似的思想，不一定是直接师承。
 
 <p class="math-source-note">这是一份根据纪录片主题整理的学习笔记，不是逐集字幕或完整人物清单。人物贡献和连线做了简化，适合继续查资料、提问题、补充新节点。</p>
