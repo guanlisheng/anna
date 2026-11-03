@@ -25,6 +25,7 @@ permalink: /:categories/:year/:month/:day/:title/
 show_excerpts: true          # 首页显示文章摘要而不是全文
 header_pages:                # 顶部导航要显示的页面（按顺序写文件名）
   - index.md
+  - blog.md
   - aboutme.md
 
 # —— 生成选项 ——

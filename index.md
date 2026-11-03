@@ -73,6 +73,16 @@ title: Anna Guan 的小世界
 
 ---
 
+## 最近的探索
+
+我喜欢把读书和纪录片里的新发现整理成小文章。欢迎到[博客看看]({{ '/blog/' | relative_url }})，以后也会继续更新。
+
+{% for post in site.posts limit:3 %}
+- [{{ post.title }}]({{ post.url | relative_url }}){% if post.excerpt %} — {{ post.excerpt | strip_html | strip_newlines }}{% endif %}
+{% endfor %}
+
+---
+
 ## 联系我
 
 如果你想和我聊画画、聊书，或者只是打个招呼，都欢迎呀 👋

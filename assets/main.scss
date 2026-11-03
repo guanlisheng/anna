@@ -181,3 +181,39 @@ ul li::marker {
     padding: 8px 12px;
   }
 }
+
+.math-story {
+  margin: 34px 0;
+}
+
+.math-story > h2 {
+  margin-top: 0;
+}
+
+.math-map {
+  margin: 24px 0;
+}
+
+.math-map-scroll {
+  overflow-x: auto;
+  padding: 18px;
+  border: 1px solid rgba(255, 207, 102, 0.55);
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255, 248, 239, 0.96), rgba(255, 255, 255, 0.94));
+  box-shadow: 0 8px 26px rgba(120, 84, 55, 0.08);
+}
+
+.math-map-scroll .mermaid {
+  min-width: 1200px;
+}
+
+.math-map-scroll .mermaid svg {
+  max-width: none !important;
+}
+
+.math-map figcaption,
+.math-source-note {
+  margin-top: 10px;
+  color: $brown;
+  font-size: 0.9rem;
+}
